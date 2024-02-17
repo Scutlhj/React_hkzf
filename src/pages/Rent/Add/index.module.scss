@@ -1,0 +1,19 @@
+.rentadd{
+    padding-bottom: 50px;
+    :global(.adm-list-header){
+        color: var(--adm-color-success);
+    }
+    // :global(.adm-form-item-child-inner) {
+    //     font-size: 16px;
+    //     color: #999;
+    //     text-align: right;
+    // }
+    .nav{
+        background-color: #eee;
+    }
+    .btns{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+}

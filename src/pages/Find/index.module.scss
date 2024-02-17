@@ -1,0 +1,18 @@
+.findhome{
+    height: 100%;
+    background-color: #fff;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    .homelist{
+        padding: 0 15px;
+        // flex: 1;
+        // overflow: auto;
+    }
+    .loading {
+        height: 110px;
+        background-color: #f6f5f6;
+        line-height: 120px;
+        text-align: center;
+      }
+}

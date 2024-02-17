@@ -1,0 +1,23 @@
+.container{
+    position: fixed;
+    right: 10px;
+    top: 60px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .item{
+        height: 18px;
+        width: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        transition: all 0.2s;
+        border-radius: 50%;
+        &.active{
+            background-color: #009966;
+            color: #fff;
+        }
+    }
+}

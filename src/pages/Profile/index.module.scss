@@ -1,0 +1,23 @@
+.profile{
+    :global(.adm-radio.adm-radio-checked .adm-radio-icon){
+        border-color:var(--adm-color-success);
+        background-color: var(--adm-color-success);
+    }
+    :global(.adm-image-uploader-cell-delete){
+        display: none;
+    }
+    :global(.adm-image-img){
+        border-radius: 50%;
+        // box-shadow: 0 0 1px 3px #ddd;
+        border: #bbb 1px solid;
+    }
+    .nav{
+        background-color: #eee;
+        .savebtn{
+            display: flex;
+            font-size: 18px;
+            justify-content: end;
+            margin-right: 5px;
+        }
+    }
+}

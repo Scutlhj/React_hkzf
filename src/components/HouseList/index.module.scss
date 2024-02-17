@@ -1,0 +1,45 @@
+.houselist {
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+    width: 100%;
+    transition: all 0.5s;
+    transform: translateY(0);
+    &.hide{
+        transform: translateY(300px);
+    }
+
+    .header {
+        height: 30px;
+        width: 100%;
+        background-color: rgb(190, 190, 190);
+        display: flex;
+        padding: 0 8px;
+        justify-content: space-between;
+
+        .title {
+            font-size: 14px;
+            font-weight: bold;
+            color: black;
+            display: flex;
+            align-items: center;
+        }
+
+        .more {
+            display: flex;
+            align-items: center;
+            font-size: 10px;
+        }
+    }
+
+    .container {
+        height: 270px;
+        overflow: auto;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        width: 100%;
+        padding: 0 8px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+}

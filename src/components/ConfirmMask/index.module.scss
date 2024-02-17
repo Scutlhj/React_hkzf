@@ -1,0 +1,60 @@
+.confirm {
+    width: 280px;
+    height: 130px;
+    position: absolute;
+    margin-top: -65px;
+    margin-left: -140px;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .btns {
+        -webkit-touch-callout: none;
+        /*系统默认菜单被禁用*/
+        -webkit-user-select: none;
+        /*webkit浏览器*/
+        -khtml-user-select: none;
+        /*早起浏览器*/
+        -moz-user-select: none;
+        /*火狐浏览器*/
+        -ms-user-select: none;
+        /*IE浏览器*/
+        user-select: none;
+        /*用户是否能够选中文本*/
+        height: 50px;
+        display: flex;
+        border-top: 1px #ddd solid;
+        font-size: 16px;
+        font-weight: 600;
+
+        .cancelbtn,
+        .logoutbtn {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        .cancelbtn:hover,
+        .logoutbtn:hover {
+            background-color: rgb(229,229,229);
+        }
+
+        .cancelbtn {
+            border-right: 1px #ddd solid;
+        }
+    }
+}

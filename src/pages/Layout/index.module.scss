@@ -1,0 +1,25 @@
+.layout{
+    height: 100%;
+    :global(.adm-tab-bar-item-active){
+        color: var(--adm-color-success);
+    }
+    .content{
+        height: 100%;
+        padding-bottom: 50px;
+        background-color: rgb(244, 244, 244);
+        overflow: auto;
+        // 隐藏滚动条
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .tabbar{
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #eee;
+    }
+}

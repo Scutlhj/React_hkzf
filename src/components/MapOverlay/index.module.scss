@@ -1,0 +1,62 @@
+.overlay_circle {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px #fff solid;
+    background-color: rgba(19, 200, 114, 0.8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
+
+    .name {
+        white-space: nowrap;
+    }
+
+    .count {
+        white-space: nowrap;
+    }
+}
+
+.overlay_rect {
+    background-color: rgba(19, 200, 114, 0.8);
+    display: flex;
+    width: 100px;
+    font-size: 12px;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 3px;
+    border-radius: 3px;
+    color: #fff;
+    justify-content: space-between;
+    position: relative;
+
+    .name {
+        white-space: nowrap;
+        text-align: center;
+        flex: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        word-break: break-all;
+    }
+
+    .count {
+        margin-left: 5px;
+        white-space: nowrap;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left:50%;
+        margin-right: -2.5px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid rgba(19, 200, 114, 0.8);
+        border-bottom: 5px solid transparent;
+    }
+}

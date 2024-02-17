@@ -1,0 +1,30 @@
+.citylist{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    :global{
+        .adm-nav-bar{
+            background-color: #f6f6f6;
+        }
+    }
+    .content{
+        flex: 1;
+        .rows{
+            .title{
+                height: 38px;
+                font-size: 14px;
+                padding: 10px 0 10px 12px;
+                color: #999;
+            }
+            .datas{
+                .dataitem{
+                    height: 42px;
+                    padding: 10px 0 10px 12px;
+                    font-size: 15px;
+                    color: #000;
+                    border-bottom: 1px solid #eee;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.usercenter {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    overflow: auto;
+    background-color: #fff;
+
+    .header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        .bgimg {
+            width: 100vw;
+        }
+
+        .userinfo {
+            position: relative;
+            transform: translateY(-70px);
+            box-shadow: 0 0 10px 3px #ddd;
+            height: 175px;
+            width: 85%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #fff;
+
+            .useravater {
+                display: flex;
+                box-shadow: 0 0 10px 3px #ddd;
+                border-radius: 50%;
+                position: absolute;
+                top: -35px;
+                height: 70px;
+                width: 70px;
+            }
+
+            .infocard {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .username {
+                    text-align: center;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .menus {
+        transform: translateY(-30px);
+
+        .menuitem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 13px;
+            margin-bottom: 30px;
+
+            .icon {
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .ad {
+        transform: translateY(-20px);
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 90%;
+        }
+    }
+}

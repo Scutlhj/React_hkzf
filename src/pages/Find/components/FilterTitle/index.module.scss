@@ -1,0 +1,30 @@
+.filterbar {
+    display: flex;
+    padding: 10px 25px;
+    justify-content: space-between;
+    background-color: #fff;
+
+    .baritem {
+        &.active {
+            .desc {
+                color: #00ae66;
+            }
+
+            color: #00ae66;
+        }
+
+        display: flex;
+        align-items: center;
+
+        .desc {
+            margin-right: 4px;
+            color: #333;
+            font-size: 16px;
+        }
+
+        color: #ccc;
+        font-size: 10px;
+    }
+
+    border-bottom: 1px #eee solid;
+}

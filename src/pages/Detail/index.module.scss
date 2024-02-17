@@ -1,0 +1,410 @@
+.detail {
+    height: 100%;
+    width: 100vw;
+    overflow: auto;
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 48px;
+
+    .header {
+        width: 100%;
+        margin-bottom: 10px;
+
+        .nav {
+            width: 100%;
+            position: fixed;
+            z-index: 999;
+            height: 40px;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.25);
+            color: #fff;
+            font-size: 16px;
+
+            :global(.adm-nav-bar-back-arrow) {
+                font-size: 16px;
+            }
+
+            :global(.adm-nav-bar-title) {
+                font-size: 16px;
+            }
+        }
+
+        .swiperimgs {
+            height: 230px;
+            width: 100%;
+        }
+    }
+
+    .housedesc {
+        background-color: #fff;
+        padding: 15px;
+        margin-bottom: 10px;
+
+        .housename {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+
+            .tagitem {
+                padding: 3px 6px;
+                border-radius: 5px;
+                font-size: 10px;
+                margin-right: 6px;
+
+                &:nth-child(1) {
+                    background-color: #ecf5ff;
+                    color: #409eff;
+                    border: 1px solid #d9ecff;
+                }
+
+                &:nth-child(2) {
+                    background-color: #f0f9eb;
+                    color: #67c23a;
+                    border: 1px solid #e1f3d8;
+                }
+
+                &:nth-child(3) {
+                    background-color: #e1f5f8;
+                    color: #39becd;
+                    border: 1px solid #d9ecff;
+                }
+
+                &:nth-child(4) {
+                    background-color: #e6fcff;
+                    color: #3ad1f7;
+                    border: 1px solid #d9ecff;
+                }
+
+                &:nth-child(5) {
+                    background-color: #e6fcff;
+                    color: #3ad1f7;
+                    border: 1px solid #d9ecff;
+                }
+            }
+        }
+
+        .houseinfotabs {
+            .cardinfo {
+                width: 100%;
+                display: flex;
+                padding: 10px;
+                border-bottom: 1px solid #eee;
+                border-top: 1px solid #eee;
+
+                .carditem {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+
+                    .cardvalue {
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fa5741;
+                        font-weight: 600;
+                        font-size: 18px;
+
+                        .valueunit {
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+                    }
+
+                    .cardtitle {
+                        height: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #999;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .attachedinfo {
+                padding: 0 10px;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .attacheditem {
+                    width: 50%;
+                    display: flex;
+                    height: 32px;
+
+                    .attachedtitle {
+                        display: flex;
+                        align-items: center;
+                        color: #999;
+                        font-size: 16px;
+                        margin-right: 3px;
+                    }
+
+                    .attachedvalue {
+                        display: flex;
+                        align-items: center;
+                        color: #333;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .maplocation {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        margin-bottom: 10px;
+
+        .location {
+            font-size: 15px;
+            font-weight: 600;
+            padding: 10px;
+        }
+
+        .map {
+            width: 100%;
+            height: 250px;
+            background-color: #39becd;
+        }
+
+        .overlay {
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 5px;
+            background-color: #fa5741;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            transform: translate(-50%, -100%);
+            position: relative;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 0;
+            margin-left: -4px;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid #fa5741;
+        }
+    }
+
+    .facilities {
+        display: flex;
+        background-color: #fff;
+        margin-bottom: 10px;
+        padding: 0 10px;
+        flex-direction: column;
+
+        .title {
+            padding: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            border-bottom: 1px #eee solid;
+        }
+
+        .supporting {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 10px;
+
+            .supportingitem {
+                color: #999;
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                font-size: 13px;
+                margin-bottom: 10px;
+
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 32px;
+                    margin-bottom: 10px;
+                }
+
+                .name {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            .nodata {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                color: #999;
+            }
+        }
+    }
+
+    .overview {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        margin-bottom: 10px;
+        padding: 10px;
+        padding-top: 0;
+
+        .title {
+            padding: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            border-bottom: 1px #eee solid;
+        }
+
+        .userinfo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+
+            .useravater {
+                display: flex;
+                font-size: 13px;
+
+                img {
+                    height: 50px;
+                    width: 50px;
+                    vertical-align: top;
+                    margin-right: 10px;
+                }
+
+                .hostdesc {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    .hostauth {
+                        color: #fa5741;
+                        display: flex;
+                        align-items: center;
+
+                        .icon {
+                            &::before {
+                                vertical-align: baseline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .btn {
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 15px;
+                font-size: 15px;
+                color: #21b97a;
+                border: 1px solid #21b97a;
+                border-radius: 10px;
+                margin-right: 15px;
+            }
+            .delbtn{
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 15px;
+                font-size: 15px;
+                color:#ff3141;
+                border: 1px solid #ff3141;
+                border-radius: 10px;
+                margin-right: 15px;
+            }
+        }
+
+        .desc {
+            line-height: 1.75;
+        }
+    }
+
+    .more {
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        margin-bottom: 10px;
+
+        .title {
+            padding: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            border-bottom: 1px #eee solid;
+        }
+    }
+
+    .bottombtn {
+        height: 48px;
+        position: fixed;
+        display: flex;
+        bottom: 0;
+        width: 100vw;
+        background-color: #fff;
+        font-size: 16px;
+        color: #999;
+
+        .add {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #eee;
+            border-right: none;
+
+            img {
+                height: 16px;
+                width: 16px;
+                vertical-align: top;
+                margin-right: 3px;
+            }
+        }
+
+        .consult {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #eee;
+        }
+
+        .reverse {
+            border: 1px solid #eee;
+            border-left: none;
+            background-color: #21b97a;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    .poptitle{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .popcontent{
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}

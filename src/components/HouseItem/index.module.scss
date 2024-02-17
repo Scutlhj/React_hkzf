@@ -1,0 +1,105 @@
+.houseitem {
+    border-bottom: 1px solid #eee;
+    // padding: 12px 0;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    .bgimg {
+        height: 86px;
+        width: 104px;
+        vertical-align: top;
+        margin-right: 15px;
+    }
+
+    .content {
+        overflow: hidden;
+        height: 86px;
+        &:has(.tagitem:nth-child(5)){
+            height: 100px;
+        }
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title {
+            font-size: 14px;
+            font-weight: 600;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-break: break-all;
+        }
+
+        .desc {
+            font-size: 10px;
+            color: #888;
+        }
+
+        .tags {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .tagitem {
+                padding: 2px 5px;
+                border-radius: 4px;
+                font-size: 10px;
+                margin-right: 5px;
+
+                &:nth-child(1) {
+                    background-color: #ecf5ff;
+                    color: #409eff;
+                    border: 1px solid #d9ecff;
+                }
+
+                &:nth-child(2) {
+                    background-color: #f0f9eb;
+                    color: #67c23a;
+                    border: 1px solid #e1f3d8;
+                }
+
+                &:nth-child(3) {
+                    background-color: #e1f5f8;
+                    color: #39becd;
+                    border: 1px solid #d9ecff;
+                }
+
+                &:nth-child(4) {
+                    background-color: #e6fcff;
+                    color: #3ad1f7;
+                    border: 1px solid #d9ecff;
+                }
+
+                &:nth-child(5) {
+                    margin-top: 3px;
+                    background-color: #e6fcff;
+                    color: #3ad1f7;
+                    border: 1px solid #d9ecff;
+                }
+            }
+        }
+
+        .price {
+            display: flex;
+            color: orangered;
+
+            .number {
+                font-size: 16px;
+                font-weight: 600;
+                margin-right: 3px;
+                display: flex;
+                align-items: center;
+            }
+
+            .unit {
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
